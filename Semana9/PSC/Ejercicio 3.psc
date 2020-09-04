@@ -1,10 +1,10 @@
-Algoritmo Ejercicio3
+Algoritmo FactorialNumero
 	Definir numero, factorial, cont  como entero
-	Escribir " Calculemos el factorial de un numero "
-	Escribir " Ingrese un numero "; Leer numero 
+	Escribir "Calculemos el factorial de un numero "
+	Escribir "Ingrese un numero "; Leer numero 
 	mientras numero<0 Hacer
-		Escribir " El numero es negativo, no existe facrotial de numeros negativos"
-		Escribir " Por vavor ingrese un numero positivo"; Leer numero 
+		Escribir "El numero es negativo, no existe facrotial de numeros negativos"
+		Escribir "Por favor ingrese un numero positivo"; Leer numero 
 	FinMientras
 	Si numero>=0 Entonces
 		cont<-0
@@ -13,12 +13,13 @@ Algoritmo Ejercicio3
 			cont<-cont+1
 			factorial<-factorial*cont
 		FinMientras
-		Escribir " El factorial de ", numero, "! es: ", factorial 
+		Escribir "El factorial de ", numero, "! es: ", factorial 
 	Sino 
 		Si numero= 0 o numero =1 entonces 
-			Escribir " El factorial de ", numero, "! es: 1"
+			Escribir "El factorial de ", numero, "! es: 1"
 		FinSi
 		
 	FinSi
-	Escribir "-------------------------------"; Escribir " Gracias "
+	Escribir "-------------------------------"
+	Escribir "Gracias "
 FinAlgoritmo
