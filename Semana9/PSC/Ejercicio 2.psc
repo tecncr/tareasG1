@@ -1,19 +1,17 @@
 Algoritmo SumaImpares
-	definir i, n, sumaimpar, numero Como Entero
-	escribir"La suma de los n numeros positivos impares"
-	Escribir "Digite los n numeros que desea calcular"
-	leer n
-	i<-0
-	sumaimpar<-0
-	mientras n>0 y i<n Hacer
-		Escribir "Digite el numero POSITIVO impar por favor"
-		leer numero
-		si numero mod 2==0 Entonces
-			Escribir"Digite por favor un positivo numero impar!!!"
-		SiNo
-			i<-i+1
-			sumaimpar<-sumaimpar+numero
-		FinSi
+	Definir n, sumaimp, i Como Entero
+	Escribir "Suma de numeros impares"
+	Escribir "Escriba hasta que numero que quiere llegar"
+	Leer n
+	sumaimp <- 0
+	Mientras n<0 Hacer
+		Escribir "No puede ser numero negativo, digite un positivo"
+		Leer n
 	FinMientras
-	Escribir "La suma de los numeros impares es: ",sumaimpar
+	Para i<-1 Hasta n con paso 1 hacer
+		si i mod 2 > 0 Entonces
+			sumaimp <- sumaimp + i
+		FinSi
+	Fin Para
+    Escribir "La suma de los impares es: ",sumaimp
 FinAlgoritmo
