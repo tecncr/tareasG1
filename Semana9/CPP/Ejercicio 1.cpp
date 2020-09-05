@@ -1,7 +1,7 @@
 #include "iostream"
 
 using namespace std;
-int main() {
+int main(int argc, char* argv[]) {
 	int conteo, maximo, minimo, numero, suma;
 	float media;
 	cout << "\tHallemos el maximo, minimo y la media de N numeros dados " << endl;

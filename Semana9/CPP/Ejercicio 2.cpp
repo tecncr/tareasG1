@@ -1,7 +1,7 @@
 #include "iostream"
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
 	int i, n, sumaimp;
 	cout << "\tSuma de numeros impares" << endl;
 	cout << "Escriba hasta que numero que quiere llegar: " << endl;

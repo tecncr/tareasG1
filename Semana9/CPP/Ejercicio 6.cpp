@@ -1,7 +1,7 @@
 #include "iostream"
 
 using namespace std;
-int main() {
+int main(int argc, char* argv[]) {
 	int a, b, cmd, denominador, n1, n2, numerador;
 	cout << "\tSimplifiquemos una fraccion  " << endl;
 	cout << "Ingrese el numerador:  " << endl;

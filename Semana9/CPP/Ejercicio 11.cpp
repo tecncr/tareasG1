@@ -1,7 +1,7 @@
 #include "iostream"
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
 	int creditos, total;
 	string curso;
 	total = 0;

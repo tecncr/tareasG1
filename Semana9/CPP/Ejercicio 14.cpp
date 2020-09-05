@@ -1,8 +1,8 @@
-#include<iostream>
-#include<cmath>
+#include "iostream"
+#include<math.h>
 
 using namespace std;
-int main() {
+int main(int argc, char* argv[]) {
 	int a, i, n;
 	float factorial2n, resultado_acum, x;
 	factorial2n = 1;

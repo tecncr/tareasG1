@@ -1,7 +1,7 @@
 #include "iostream"
 
 using namespace std;
-int main() {
+int main(int argc, char* argv[]) {
 	int cont, factorial, numero;
 	cout << "\tCalculemos el factorial de un numero " << endl;
 	cout << "\nIngrese un numero: " << endl;

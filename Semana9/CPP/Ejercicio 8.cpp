@@ -1,7 +1,7 @@
 #include "iostream"
 
 using namespace std;
-int main() {
+int main(int argc, char* argv[]) {
 	int i, num;
 	i = 1;
 	cout << "\tHallar los divisores de un numero" <<endl;
