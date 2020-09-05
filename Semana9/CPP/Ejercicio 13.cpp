@@ -1,11 +1,13 @@
-#include "iostream"
-
+// Ejercicio13
+#include<iostream>
 using namespace std;
-int main(int argc, char* argv[]) {
+
+int main() {
 	int a, b, n, num;
-	cout << "\tMaximizador de producto de 2 sumandos de un numero positivo." << endl;
+	cout << "                    Partamos un numero en 2 sumandos " << endl;
+	cout << "------------------------------------------------------------------------" << endl;
 	do {
-		cout << "\nIngrese el numero:" << endl;
+		cout << "Ingrese el numero:" << endl;
 		cin >> num;
 		if (num<0) {
 			cout << "Por favor ingrese un numero positivo." << endl;
@@ -20,7 +22,9 @@ int main(int argc, char* argv[]) {
 		a = n/2;
 		b = n/2;
 	}
-	cout << "Los dos sumandos que conforman " << num << " con producto máximo son: " << a << " y " << b << endl;
+	cout << "Los dos sumandos que conforman " << num << " con producto maximo son: " << a << " y " << b << endl;
+	cout << "-------------------------------------------------------------------------" << endl;
+	cout << "                                   Gracias " << endl;
 	return 0;
 }
 
