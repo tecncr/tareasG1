@@ -12,7 +12,7 @@ Fin Funcion
 
 
 Algoritmo MCM
-	Definir a, b, c, max, mid, min, div, mcmf, mcm_acum Como Entero
+	Definir a, b, c, max, mid, min, div, mcm_acum Como Entero
 	mcm_acum <- 1
 	Escribir "Programa que calcula el MCM de tres números."
 	a <- ingresar_validar("primer")
@@ -74,6 +74,6 @@ Algoritmo MCM
 		Fin Para
 	Mientras Que min<>1 y mid<>1 y max<>1
 	
-	Escribir mcm_acum
+	Escribir "El MCM de ",a,", ",b," y ",c," es: ",mcm_acum
 	
 FinAlgoritmo

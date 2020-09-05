@@ -1,34 +1,69 @@
-Algoritmo Ejercicio5
-	Definir a, b, c, mcd, N1, N2, N3, m1, m2, m3 como entero
-	Escribir "Calculemos el MCD de tres numeros "
-	Escribir "Ingrese el primer numero: "
-	Leer a 
-	Escribir "Ingrese el segundo numero: "
-	Leer b
-	Escribir "Ingrese el tercero numero: "
-	Leer c
-	N1<-a
-	N2<-b
-	N3<-c
-	Mientras N1<>N2 hacer
-		Si N1>N2  Entonces
-			m1<-trunc(N1/N2)
-		Sino 
-			m2<-trunc(N2/N1)
+Funcion numero_ingresado <- ingresar_validar (orden)
+	Definir numero_ingresado Como Entero
+	Repetir
+		Escribir "Ingrese el ",orden," número."
+		Leer numero_ingresado
+		Si numero_ingresado < 1 Entonces
+			Escribir "El numero ingresado no es válido. Por favor ingrese"
+			Escribir "un numero igual o superior a 1."
 		FinSi
-	FinMientras
-	Mientras N2<>N3 hacer
-		Si N2>N3  Entonces
-		    m2<-trunc(N2/N3)
+	Mientras Que numero_ingresado < 1
+Fin Funcion
+
+
+Algoritmo MCD
+	Definir a, b, c, max, mid, min, div, mcd_acum Como Entero
+	mcd_acum <- 1
+	Escribir "Programa que calcula el MCD de tres números."
+	a <- ingresar_validar("primer")
+	b <- ingresar_validar("segundo")
+	c <- ingresar_validar("tercer")
+	
+	Si a <= b y a <= c y b <= c Entonces
+		min <- a
+		mid <- b
+		max <- c
+	SiNo
+		Si a <= b y a <= c y c <= b Entonces
+			min <- a
+			mid <- c
+			max <- b
+		SiNo
+			Si b <= a y b <= c y a <= c Entonces
+				min <- b
+				mid <- a
+				max <- c
+			SiNo
+				Si b <= a y b <= c y c <= a Entonces
+					min <- b
+					mid <- c
+					max <- a
+				SiNo
+					Si c <= a y c <= b y a <= b Entonces
+						min <- c
+						mid <- a
+						max <- b
+					SiNo
+						Si c <= a y c <= b y b <= a Entonces
+							min <- c
+							mid <- b
+							max <- a
+						FinSi
+					FinSi
+				FinSi
+			FinSi
 		FinSi
-	FinMientras
-	Mientras N1<>N3 hacer
-		Si N1>N3  Entonces
-			m1<-trunc(N1/N3)
-		Sino 
-			m3<-trunc(N3/N1)
+	FinSi
+	
+	Para div<-1 Hasta max Con Paso 1 Hacer
+		Si min mod div = 0 y mid mod div = 0 y max mod div = 0 Entonces
+			min <- min/div
+			mid <- mid/div
+			max <- max/div
+			mcd_acum <- mcd_acum * div
 		FinSi
-	FinMientras
-	mcd <- m2
-	Escribir " El MCD de los numeros ", a ,", ", b, " y " , c " es : ",mcd
+	Fin Para
+	
+	Escribir "El MCD de ",a,", ",b," y ",c," es: ",mcd_acum
+	
 FinAlgoritmo
