@@ -9,10 +9,11 @@ Algoritmo serie
 	Escribir "Ingrese el valor de N: "
 	Leer n
 	Para i<-1 Hasta n Con Paso 1 Hacer 
-		Para a<-1 Hasta 2*n Con Paso 1 Hacer
+		Para a<-1 Hasta 2*i Con Paso 1 Hacer
 			factorial2n <- factorial2n*a
 		Fin Para
 		resultado_acum <- resultado_acum + (n*x^n)/factorial2n
+		factorial2n <- 1
 	Fin Para
 	Escribir "La suma de los ",n," términos de la serie es ",resultado_acum
 FinAlgoritmo
