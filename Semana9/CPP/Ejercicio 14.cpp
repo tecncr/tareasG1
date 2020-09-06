@@ -12,11 +12,12 @@ int main(int argc, char* argv[]) {
 	cin >> x;
 	cout << "Ingrese el valor de N: " << endl;
 	cin >> n;
-	for (i=1;i<=n;i++) {
-		for (a=1;a<=2*n;a++) {
-			factorial2n = factorial2n*a;
+	for (i=1; i<=n; i++) {
+		for (a=1; a<=2*i; a++) {
+			factorial2n *= a;
 		}
-		resultado_acum = resultado_acum+(n*pow(x,n))/factorial2n;
+		resultado_acum += r(n*pow(x,n))/factorial2n;
+		factorial2n = 1;
 	}
 	cout << "La suma de los " << n << " terminos de la serie es " << resultado_acum << endl;
 	return 0;
